@@ -166,7 +166,7 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-    if (num === 0) {
+    if (numero === 0) {
     return false;
   }
   else if(numero > 0) {
@@ -202,7 +202,7 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-    return altura * ancho
+    return alto * ancho
 }
 
 
@@ -224,7 +224,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-    return euro * 1.2;
+    return euro * 1.20
 }
 
 
@@ -234,15 +234,14 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-    if (letra.length > 1){
-      return 'Dato incorrecto';
-    }
-    if(letra === 'a', letra === 'e', letra === 'i', letra === 'o', letra === 'u') {
-      return 'Es vocal';
-    }
-    return 'Dato incorrecto';
+  if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u'){
+    return 'Es vocal'
+}
+  else if(letra.length > 1){
+    return 'Dato incorrecto'
   }
-    
+return 'Dato incorrecto';
+}
 
 
 
