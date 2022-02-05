@@ -224,8 +224,8 @@ function breakStatement(numero) {
         array.push(suma);
       }
     }
-    if(i < 100){
-      return 'Se interrumpió la ejecucación';
+    if(i < 10){
+      return 'Se interrumpió la ejecución';
     }
     else {
       return array;
